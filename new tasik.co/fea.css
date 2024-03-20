@@ -1,0 +1,74 @@
+.logo{
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 30px;
+    
+    padding-top: 10px;
+    margin-top: 10px;
+    animation:  logos 50s infinite linear;
+}
+@keyframes logos{
+    0%,100%{
+        color:#fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #ff9d00,
+        0 0 20px #ff9d00,
+        0 0 400px #ff9d00,
+        0 0 80px #ff9d00,
+        0 0 120px #ff9d00,
+        0 0 200px #ff9d00,
+        0 0 300px #ff9d00,
+        0 0 400px #ff9d00;
+    }
+
+    5%,95%{
+        color:#ff7200;
+        filter:blur(0px);
+        text-shadow: none;
+    }
+}
+.icon{
+    width: 200px;
+    position:absolute;
+    left:50px;
+    height: 150px;
+}
+.te{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    margin-top: 50px;
+
+}
+#table2{
+    position:absolute;
+    top:1460px;
+   right: 10px;
+   height:400px;
+}
+#para21{
+    color:#ff6666;
+    font-size: 50px;
+    text-align: center;
+    font-family: valentina;
+    animation:fea 2s infinite alternate;
+}
+@keyframes fea{
+    from{rext-shadow:2px 2px 0px white}
+    to{text-shadow: 3px 3px 0px #505050;}
+}
+#para22{
+    font-size: 29px;
+    font-family: markpro;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+.image-container{
+    display: inline-block;
+
+}
+img{
+float: right;
+height: 100px;
+width: 100px;
+}

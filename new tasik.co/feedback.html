@@ -1,0 +1,43 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Feedback</title>
+    <link rel="stylesheet" href="styleses.css">
+</head>
+<body>
+    <a href="web.html" onclick="myfunc()" style="--clr:#202020">BACK TO HOME</a>
+    <h1>All Feedback</h1>
+
+    <div id="feedbackData"></div>
+
+    <script>
+        // Read data from localStorage
+        var storedFeedback = localStorage.getItem('feedback');
+        var feedbackDataElement = document.getElementById('feedbackData');
+
+        if (storedFeedback) {
+            // Display all feedback data if available
+            var feedbackArray = JSON.parse(storedFeedback);
+            feedbackArray.forEach(function(feedbackData, index) {
+                feedbackDataElement.innerHTML += `
+                    <div class="feedback-entry">
+                        <p><strong>Name:</strong> ${feedbackData.name}</p>
+                        <p><strong>Email:</strong> ${feedbackData.email}</p>
+                        <p><strong>Feedback:</strong> ${feedbackData.feedback}</p>
+                    </div>
+                    <hr>
+                `;
+            });
+        } else {
+            feedbackDataElement.innerHTML = '<p>No feedback data available.</p>';
+        }
+        function myfunc() {
+      alert("DO YOU WANT TO GO TO OUR MAIN WEBSITE!!");
+    }
+    </script>
+
+</body>
+</html>
