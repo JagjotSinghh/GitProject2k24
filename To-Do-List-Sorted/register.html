@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/register.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- registration form -->
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="FormFill">
+                <h2>Registration</h2>
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bx-envelope' ></i>
+                    <input type="Email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock' ></i>
+                    <input type="Password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock' ></i>
+                    <input type="Password" name="cPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" value="Register" onclick="myfunction()">
+                </div>
+                <div class="group">
+                  <span><a href="#">Forget-Password</a></span>
+                   <span class="login"><a href="login2.0.html">Login</a></span>
+                </div>
+                <button  onclick="mycon()"> <a href="web.html">BACK TO HOME</a></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function myfunction()
+        {
+          alert('DO YOU REALLY WANT TO REGISTER?')  
+        }
+        function mycon(){
+            alert("DO YOU REALLY WANT TO GO TO OUR MAIN WEBSITE!!!");
+        }
+    </script>
+    </script>
+</body>
+</html>

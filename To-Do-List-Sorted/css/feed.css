@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background:url('../img/big-sur-mountains-clouds-sunset-evening-macos-big-sur-stock-6016x6016-1498.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        }
+
+        form {
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .1);
+            backdrop-filter: blur(30px);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+
+        button {
+           
+            color: #000;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+           
+        }
+
+        button:hover {
+            background-color: #6F4518;
+            color: white;
+        }
+        #b:hover{
+            color: #fff;
+        }

@@ -1,0 +1,111 @@
+body{
+    background:url('../img/img1.jpeg');
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.navbar{
+    background-color: #22223B;
+}
+.navbar-nav{
+    font-weight: bolder;
+
+}
+#headtext {
+    color: #fff;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    padding-right: 15px;
+    font-weight: bolder;
+}
+#headtext2 {
+    color: #fff;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    font-weight: bold;
+}
+/* chat bot */
+
+
+#c_bot {
+    position: relative;
+   top: 120px;
+    left: 640px;
+    width: 360px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+     font-weight: bolder;
+}
+
+#chatbot {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    font-weight: 400;
+    color: #fff;
+    font-weight: 500;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid #ccc;
+    outline: none;
+    font-weight: bolder;
+}
+
+
+/* Footer Start */
+#footer{
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    text-align: center;
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    font-weight: 500;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color:#fff ;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+
+.a{
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+
+}
+.a:hover{
+    text-decoration: none;
+    color: black;
+}
+
