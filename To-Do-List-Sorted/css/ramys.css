@@ -1,34 +1,37 @@
+@font-face {
+  font-family: MarkPro;
+  src: url(../MarkPro.TTF);
+}
 *{
+    background-color: #f7f7ed;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-  a {
-  
+  .Homebutton{
+    font-family: MarkPro;
+    color:#f7f7ed; 
+    margin-left:-8px;
+    background-color: #1e1b18;
     position: relative;
-    background: transparent;
     top: 10px;
-    left: 15px;
-    color: #fff;
+    left: 10px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    font-weight: 400;
     padding: 5px 11px;
-    transition: 0.5s;
+    border-radius: 10px;
+    transition: 1s ease-out;
+    
   }
-  a:hover {
-    background: var(--clr);
-    letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--clr);
+  .Homebutton:hover{
+    background-color: #ff4500;
+    transform: scaleX(2);
+    color: #1e1b18;
+    font-weight: bold;
   }
- body {
-   background-color: lightgray;
- }
+
   .hero{
-   background-color: lightgray;
+   background-color: #f7f7ed;
     overflow: hidden;
   }
 /* -----quote 1 */
@@ -50,9 +53,10 @@
   }
   
   .quote{
+    font-family: MarkPro;
     padding: 20px;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 15px;
+    color: #666;
   }
   .main i{
     font-size: 90px;
@@ -90,43 +94,32 @@
     animation: fadeInUp 2s ease;
   }
   .hero-content h2{
-    font-size: 38px;
+    font-size: 30px;
+    font-family: MarkPro;
     margin-bottom: 20px;
-    color: #333;
+    color: #1e1b18;
   
   }
   .hero-content p{
-    font-size: 24px;
+    font-family: MarkPro;
+    font-size: 17px;
     line-height: 1.5;
+    text-align: justify;
     margin-bottom: 40px;
-    color: #666;
+    color: #333;
   
   }
-  .hero-content button{
-    display: inline-block;
-    background-color: #ff4500;
-    color: #fff;
-    padding: 10px 24px;
-    border-radius: 5px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  .hero-content button:hover{
-    background-color: #ff6347;
-    transform: scale(1.1);
-  }
+ 
   .hero-image{
     flex: 1;
-    width: 600px;
+    
     margin: 0px 25px;
-    animation: fadeInRight 2s ease;
-  
+    animation: fadeInRight 1s ease;
+    transition: 1s;
+   
   }
   .hero-image:hover{
-    
-    transform:scale(1.1);
+    transform:scale(1.02);
   }
   img{
       width: 100%;
@@ -556,10 +549,18 @@
    /*  quote 5 */
   
   .heading h1{
-    color: #ff6347;
-    font-size: 55px;
-    text-align: center;
-    margin-top: 35px ;
+    font-family: 'MarkPro';
+    color: #f7f7ed;
+    font-size: 48px;
+    text-decoration: none;
+    margin-top: 0px ;
+    font-weight: bold;
+    background-color: #1e1b18;
+    box-shadow: 1px 1px 1px 10px #000;
+  }
+  h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .container4 {
     display: flex;
