@@ -9,7 +9,7 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
     min-height: 100vh;
     background:url(../img/full-moon-landscape-3840x3840-13385.jpg);
     background-size: cover;
@@ -99,7 +99,11 @@ a {
     border:none;
     outline: none;
     border-radius: 5px;
-    box-decoration-break: 0 0 10px rgba(0,0,0, .1);
+    .remember-forget label input:checked ~ .inputbox input[type="password"] {
+        -webkit-text-security: none;
+        -moz-text-security: none;
+        text-security: none;
+    }
     cursor: pointer;
     font-size: 16px;
     color: #333;
@@ -122,3 +126,10 @@ a {
     text-decoration:underline;
     font-weight: 600px;
 }
+/* BEGIN: Additional CSS Code */
+.wrapper .inputbox input[type="password"] {
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+    text-security: disc;
+}
+/* END: Additional CSS Code */
