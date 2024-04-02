@@ -1,70 +1,89 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=poppins:wght@30;400;500;600;700;800;900&display=swap");
 
+/* Resetting default styles */
 *{
     margin: 0;
     padding: 0;
     font-family: "poppins",sans-serif;
     box-sizing: border-box;
 }
+
+/* Styling for the body */
 body {
+    /* Background image */
     background: url('../img/neon-cubes-maze-5824x3264-12557.jpg') no-repeat;
-   background-position: center;
-   background-size: cover;
-   min-height: 100vh;
-   width: 100%;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
 }
 
+/* Container styling */
 .container{
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
 }
+
+/* Styling for the form box */
 .form-box{
     position: relative;
     width: 400px;
     height: 550px;
-    border: 2px solid rgba(255, 255, 2550.5);
-    border-radius:20px;
-    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+    border-radius: 20px;
+    backdrop-filter: blur(15px); /* Blurring background */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Heading style */
 .form-box h2{
-    color: #fff;
+    color: #fff; /* White text */
     text-align: center;
     font-size: 32px;
 }
+
+/* Input box styling */
 .form-box  .input-box{
     position: relative;
-    margin:30px 0;
+    margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff; /* White bottom border */
 }
 
+/* Input field styling */
 .form-box .input-box input{
-    width:100%;
+    width: 100%;
     height: 45px;
     background: transparent;
     border: none;
     outline: none;
     padding: 0 20px 0 5px;
-    color: #fff;
+    color: #fff; /* White text */
     font-size: 16px;
 }
+
+/* Icon styling */
 i{
     position: absolute;
-    color: #fff;
+    color: #fff; /* White color */
     top: 13px;
     right: 0;
 }
+
+/* Placeholder text color */
 input::placeholder{
-    color: #fff;
+    color: #fff; /* White color */
 }
+
+/* Button styling */
 .btn{
-    color: #fff;
-    background: blue;
+    color: #fff; /* White text */
+    background: blue; /* Blue background */
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -72,22 +91,29 @@ input::placeholder{
     border: none;
     font-size: 17px;
     cursor: pointer;
-    box-shadow: 3px 0 10px rgba(0., 0, 0, .5);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
 }
+
+/* Group styling */
 .group{
     padding-bottom: 20px;
 }
-.group span a {
 
-    color: #fff;
+/* Styling for links within groups */
+.group span a {
+    color: #fff; /* White color */
     position: relative;
     top: 10px;
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Login link styling */
 .login{
-       padding-left: 135px;
+    padding-left: 135px;
 }
+
+/* Hover effect for login link */
 .login:hover{
     text-decoration: underline;
 }
