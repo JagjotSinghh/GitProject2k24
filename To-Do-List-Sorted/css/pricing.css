@@ -1,131 +1,150 @@
+/* Reset default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body styles */
 body {
-    font-family: "lato",sans-serif;
-    background: url(../img/pexels-sohail-nachiti-807598.jpg);
-    background-size: cover;
-}
-a {
-    position: relative;
-    background: transparent;
-    top: 20px;
-    left: 15px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    padding: 10px 15px;
-    transition: 0.5s;
-  }
-  a:hover {
-    background: var(--clr);
-    letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--clr);
-  }
-.pricing-table {
-    background:transparent;
-    padding: 40px 0px;
-}
-.pricing-table .details {
-    width: 90%;
-    max-width: 500px;
-    text-align: left;
-    margin: 0 auto;
-    color: #fff;
-    font-weight: bold;
-    padding: 40px 20px;
-}
-.pricing-table .details h1 {
-     font-size: 30px;
-     margin-bottom: 10px;
-}
-.pricing-table .details p {
-    font-size: 21px;
-    font-weight: 500;
-    text-align: left;
-}
-.pricing-table .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px 25px;
-    padding: 20px 15px;
-}
-.pricing-table .grid .box {
-    width: 250px;
-    border: 1px solid #eee;
-    text-align: center;
-    padding: 20px;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px 5px rgb(0, 0 , 0, 0.05);
-}
-.pricing-table .grid .box .title {
-     font-size: 16px;
-     font-weight: bolder;
-     margin-bottom: 20px;
-     color:#fff;
-}
-.pricing-table .grid .box .price {
-    margin-bottom: 20px;
-}
-.pricing-table .grid .box .price b {
-    display: block;
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: -5px;
-}
-.pricing-table .grid .box .price span {
-    color: #fff;
-    font-weight: 600;
-}
-.pricing-table .grid .box .feature > * {
-    color: #fff;
-    padding: 8px 0px;
-    font-weight: bold;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.pricing-table .grid .box .button button {
-     width: 100%;
-     margin: 25px 0px 0px;
-     padding: 10px;
-     background: linear-gradient(to bottom,#3a7bd5 , #3a6073);
-     color: #fff;
-     border-radius: 5px;
-     outline: none;
-     border: none;
-     font-weight: 600;
-     cursor: pointer;
-}
-.pricing-table .grid .box .ultimate {
-    transform: scale(1.1);
-    background: linear-gradient(to bottom,#3a7bd5 , #3a6073);
-}
-.pricing-table .grid .box .ultimate .title {
-    color: #eee;
-}
-.pricing-table .grid .box .ultimate .price {
-    color: #fff;
-} 
-.pricing-table .grid .box .ultimate .feature > * {
-    color: #fff;
-    border-bottom: 1px solid rgb(255, 255 , 255, 0.5);
-}
-.pricing-table .grid .box .ultimate .button button {
-    background: #fff;
-    color:#3a6073 ;
+    font-family: "lato", sans-serif;
+    background: url(../img/pexels-sohail-nachiti-807598.jpg); /* Background image */
+    background-size: cover; /* Cover the entire background */
 }
 
-@media (max-width:804px) {
+/* Hyperlink styles */
+a {
+    position: relative; /* Positioning */
+    background: transparent; /* Transparent background */
+    top: 20px; /* Offset from the top */
+    left: 15px; /* Offset from the left */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase; /* Uppercase text */
+    font-size: 1.5em; /* Font size */
+    letter-spacing: 0.1em; /* Letter spacing */
+    font-weight: 400; /* Font weight */
+    padding: 10px 15px; /* Padding */
+    transition: 0.5s; /* Transition effect */
+}
+a:hover {
+    background: var(--clr); /* Background color on hover */
+    letter-spacing: 0.25em; /* Increased letter spacing on hover */
+    box-shadow: 0 0 35px var(--clr); /* Box shadow on hover */
+}
+
+/* Pricing table container */
+.pricing-table {
+    background: transparent; /* Transparent background */
+    padding: 40px 0px; /* Padding */
+}
+
+/* Details section */
+.pricing-table .details {
+    width: 90%; /* Set width */
+    max-width: 500px; /* Maximum width */
+    text-align: left; /* Text alignment */
+    margin: 0 auto; /* Center alignment */
+    color: #fff; /* Text color */
+    font-weight: bold; /* Font weight */
+    padding: 40px 20px; /* Padding */
+}
+.pricing-table .details h1 {
+    font-size: 30px; /* Font size */
+    margin-bottom: 10px; /* Bottom margin */
+}
+.pricing-table .details p {
+    font-size: 21px; /* Font size */
+    font-weight: 500; /* Font weight */
+    text-align: left; /* Text alignment */
+}
+
+/* Grid layout for pricing boxes */
+.pricing-table .grid {
+    display: flex; /* Flexbox display */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center alignment */
+    gap: 30px 25px; /* Gap between elements */
+    padding: 20px 15px; /* Padding */
+}
+
+/* Styling for each pricing box */
+.pricing-table .grid .box {
+    width: 250px; /* Set width */
+    border: 1px solid #eee; /* Border */
+    text-align: center; /* Text alignment */
+    padding: 20px; /* Padding */
+    backdrop-filter: blur(15px); /* Apply blur effect */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 2px 10px 5px rgb(0, 0 , 0, 0.05); /* Box shadow */
+}
+.pricing-table .grid .box .title {
+    font-size: 16px; /* Font size */
+    font-weight: bolder; /* Font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    color: #fff; /* Text color */
+}
+/* Styles for pricing details */
+.pricing-table .grid .box .price {
+    margin-bottom: 20px; /* Bottom margin */
+}
+.pricing-table .grid .box .price b {
+    display: block; /* Block display */
+    font-size: 40px; /* Font size */
+    color: #fff; /* Text color */
+    margin-bottom: -5px; /* Bottom margin */
+}
+.pricing-table .grid .box .price span {
+    color: #fff; /* Text color */
+    font-weight: 600; /* Font weight */
+}
+.pricing-table .grid .box .feature > * {
+    color: #fff; /* Text color */
+    padding: 8px 0px; /* Padding */
+    font-weight: bold; /* Font weight */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Bottom border */
+}
+
+/* Button styles */
+.pricing-table .grid .box .button button {
+    width: 100%; /* Full width */
+    margin: 25px 0px 0px; /* Margin */
+    padding: 10px; /* Padding */
+    background: linear-gradient(to bottom, #3a7bd5, #3a6073); /* Gradient background */
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Border radius */
+    outline: none; /* Remove outline */
+    border: none; /* Remove border */
+    font-weight: 600; /* Font weight */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the "Ultimate" plan */
+.pricing-table .grid .box .ultimate {
+    transform: scale(1.1); /* Scale effect */
+    background: linear-gradient(to bottom, #3a7bd5, #3a6073); /* Gradient background */
+}
+.pricing-table .grid .box .ultimate .title {
+    color: #eee; /* Text color */
+}
+.pricing-table .grid .box .ultimate .price {
+    color: #fff; /* Text color */
+}
+.pricing-table .grid .box .ultimate .feature > * {
+    color: #fff; /* Text color */
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5); /* Bottom border */
+}
+.pricing-table .grid .box .ultimate .button button {
+    background: #fff; /* Background color */
+    color: #3a6073; /* Text color */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 804px) {
     .pricing-table .grid {
-        gap: 20px;
+        gap: 20px; /* Gap between elements */
     }
     .pricing-table .grid .box .ultimate {
-        transform: scale(1);
+        transform: scale(1); /* Remove scale effect */
     }
 }
