@@ -1,25 +1,30 @@
-/* styles.css */
+/* Set the font family, background image, margin, and background size for the entire page */
 body {
     font-family: Arial, sans-serif;
     background: url('../img/big-sur-mountains-clouds-sunset-evening-macos-big-sur-stock-6016x6016-1498.jpg');
     margin: 20px;
-    background-size: cover;
+    background-size: cover; /* Cover the entire background with the image */
 }
+
+/* Adjust the padding for <h1> elements to position them */
 h1 {
     padding-left: 680px;
     padding-top: 200px;
 }
 
+/* Adjust the margins for <form> elements to position them */
 form {
     margin-top: 10px;
     margin-left: 580px;
 }
 
+/* Style the labels within forms */
 label {
     display: block;
     margin-bottom: 5px;
 }
 
+/* Style text input fields and textareas */
 input,
 textarea {
     width: 40%;
@@ -27,24 +32,29 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* Style buttons, including padding, background color, border, and cursor behavior */
 button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #1b561d;
     border: none;
     cursor: pointer;
 }
 
+/* Change background color of buttons on hover */
 button:hover {
-    background-color: #45a049;
+    background-color: #5cca61;
 }
 
+/* Style elements with the class '.feedback-entry', adding margin to space them out */
 .feedback-entry {
     margin-bottom: 20px;
 }
+
+/* Style anchor (link) elements, adjusting their position, color, decoration, and transitions */
 a {
     position: relative;
     background: transparent;
-    top: 20px;
+    top: 21px;
     left: 15px;
     color: #fff;
     text-decoration: none;
@@ -52,11 +62,13 @@ a {
     font-size: 1.5em;
     letter-spacing: 0.1em;
     font-weight: 400;
-    padding: 10px 15px;
-    transition: 0.5s;
-  }
-  a:hover {
-    background: var(--clr);
+    padding: 11px 16px;
+    transition: 0.5s; /* Smooth transition effect */
+}
+
+/* Style anchor elements when hovered over, changing background color, letter spacing, and adding a box shadow */
+a:hover {
+    background: var(--clr); /* Assumes '--clr' variable is defined elsewhere */
     letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--clr);
-  }
+    box-shadow: 0 0 35px var(--clr); /* Add a box shadow */
+}
