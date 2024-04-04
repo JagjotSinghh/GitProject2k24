@@ -1,17 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define favicon for the website -->
     <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <!-- Set character encoding to UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Set viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set title of the webpage -->
     <title>TM - Feedback Form</title>
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Anchor tag to navigate back to home page -->
     <a href="web.html" onclick="myfunc()" style="--clr:orange">BACK TO HOME</a>
+    <!-- Heading for the feedback form -->
     <h1>Feedback Form</h1>
 
+    <!-- Feedback form with input fields for name, email, and feedback -->
     <form id="feedbackForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -28,14 +35,18 @@
         
         <br>
         
+        <!-- Button to submit feedback, with onclick event calling submitFeedback() function -->
         <button type="button" onclick="submitFeedback()">Submit Feedback</button>
     </form>
 
+    <!-- JavaScript section -->
     <script>
+        // Function to display alert when navigating back to home page
         function myfunc() {
-      alert("You are being redirected to the Home Page.");
-    }
+            alert("You are being redirected to the Home Page.");
+        }
    
+        // Function to handle submission of feedback form
         function submitFeedback() {
             // Get form values
             var name = document.getElementById('name').value;
@@ -61,6 +72,7 @@
             // Clear form
             document.getElementById('feedbackForm').reset();
 
+            // Display success message
             alert('Feedback submitted successfully!');
         }
     </script>
