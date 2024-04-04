@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Link to the favicon file -->
     <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TM - Pricing  </title>
+    <!-- Title of the webpage -->
+    <title>TM - Pricing</title>
+    <!-- Link to external CSS file -->
     <link href="css/pricing.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Link to return to the home page with onclick event -->
     <a href="web.html" onclick="myfunc()" style="--clr:#2d6a4f">BACK TO HOME</a>
-   <div class="pricing-table">
-    <div class="details">
-        <h1>Package to suit your plan</h1>
-        <p>"Explore our transparent pricing to find the perfect plan that suits your needs and budget."</p>
-
+    <!-- Pricing table section -->
+    <div class="pricing-table">
+        <!-- Introduction section -->
+        <div class="details">
+            <h1>Package to suit your plan</h1>
+            <p>"Explore our transparent pricing to find the perfect plan that suits your needs and budget."</p>
+        </div>
+        <!-- Grid layout for pricing plans -->
+        <div class="grid">
+            <!-- Basic Plan -->
+            <div class="box">
+                <div class="title">BASIC</div>
+                <div class="price">
+                    <b><span>&#8377</span>149.99</b>
+                    <span>per month</span>
+                </div>
+                <div class="feature">
+                    <div>Access to some basic to-do list themes</div>
+                    <div>Basic task management</div>
+                    <div>Cross-device sync</div>
+                </div>
+                <div class="button">
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <!-- Pro Plan -->
+            <div class="box">
+                <div class="title">PRO</div>
+                <div class="price">
+                    <b><span>&#8377</span>499.99</b>
+                    <span>per month</span>
+                </div>
+                <div class="feature">
+                    <div>Access to some standard to-do list themes</div>
+                    <div>Priority support</div>
+                    <div>Advanced task management</div>
+                    <div>Data Export</div>
+                </div>
+                <div class="button">
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <!-- Ultimate Plan -->
+            <div class="box">
+                <div class="title">ULTIMATE</div>
+                <div class="price">
+                    <b><span>&#8377</span>999.99</b>
+                    <span>per month</span>
+                </div>
+                <div class="feature">
+                    <div>Access to some Premium to-do list themes</div>
+                    <div>Priority access to new features</div>
+                    <div>Dedicated account manager</div>
+                    <div>Advanced security features</div>
+                    <div>Integration with Third-Party Apps</div>
+                </div>
+                <div class="button">
+                    <button>Learn more</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="grid">
-        <div class="box">
-            <div class="title">BASIC</div>
-            <div class="price">
-                <b><span>&#8377</span>149.99</b>
-                <span>per month</span>
-            </div>
-            <div class="feature">
-                <div>Access to some basic to-do list themes</div>
-                <div>basic task management</div>
-                <div>cross-device sync</div>
-            </div>
-            <div class="button">
-                <button> Learn more</button>
-            </div>
-        </div>
-        <div class="box">
-            <div class="title">PRO</div>
-            <div class="price">
-                <b><span>&#8377</span>499.99</b>
-                <span>per month</span>
-            </div>
-            <div class="feature">
-                <div>Access to some standard to-do list themes</div>
-                <div>Proiority support</div>
-                <div>Advanced task management</div>
-                <div>Data Export</div>
-            </div>
-            <div class="button">
-                <button> Learn more</button>
-            </div>
-        </div>
-        <div class="box">
-            <div class="title">ULTIMATE</div>
-            <div class="price">
-                <b><span>&#8377</span>999.99</b>
-                <span>per month</span>
-            </div>
-            <div class="feature">
-                <div>Access to some Premium to-do list themes</div>
-                <div>Proiortiy access to new features</div>
-                <div>dedicated account manager</div>
-                <div>Advanced security features</div>
-                <div>Integration with Third-Party Apps</div>
-            </div>
-            <div class="button">
-                <button> Learn more</button>
-            </div>
-        </div>
-    </div>
- </div>
- <script>
-    function myfunc() {
-      alert("You are being redirected to the Home Page.");
-    }
+    <!-- JavaScript function for the "BACK TO HOME" link -->
+    <script>
+        function myfunc() {
+            alert("You are being redirected to the Home Page.");
+        }
     </script>
 </body>
 </html>
