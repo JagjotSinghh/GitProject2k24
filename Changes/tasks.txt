@@ -1,5 +1,5 @@
 CHANGES TO BE DONE IN WEBSITE AND BY WHOM
-Moksh- modify Features, Favicons and page titles.
+Moksh- modify Features, Favicons and page titles. {DONE}
 Madhav- modify themes and image gallery.
 Laxman- modify Feedback form and ratings.
 Sufiyan- modify login and register pages (Symetry & back to home).
