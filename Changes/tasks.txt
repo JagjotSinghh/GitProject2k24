@@ -3,4 +3,4 @@ Moksh- modify Features, Favicons and page titles. {DONE}
 Madhav- modify themes and image gallery. ✅
 Laxman- modify Feedback form and ratings.{Done}
 Sufiyan- modify login and register pages (Symetry & back to home).{DONE}
-Guri- modify pricing te chatbot section (Symetry and add more functions).
+Guri- modify pricing te chatbot section (Symetry and add more functions).✅
