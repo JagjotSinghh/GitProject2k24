@@ -1,4 +1,4 @@
-<!-- feedback.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="css/styleses.css">
 </head>
 <body>
-    <a href="web.html" onclick="myfunc()" style="--clr:#202020">BACK TO HOME</a>
-    <h1>All Feedback</h1>
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <a href="web.html" onclick="myfunc()" style="display: inline-block; color: #fff; text-decoration: none; text-transform: uppercase; font-size: 1em; font-weight: bold; padding: 10px 20px; margin-bottom: 20px; background-color: #333; border: 2px solid #333; border-radius: 5px; transition: all 0.3s ease;">BACK TO HOME</a>
+        <h1 style="text-align: center; color: #333; margin-top: 20px;">All Feedback</h1>
 
-    <div id="feedbackData"></div>
+        <div id="feedbackData">
+            <!-- Feedback entries will be added dynamically here -->
+        </div>
+    </div>
 
     <script>
         // Read data from localStorage
@@ -24,21 +28,21 @@
             var feedbackArray = JSON.parse(storedFeedback);
             feedbackArray.forEach(function(feedbackData, index) {
                 feedbackDataElement.innerHTML += `
-                    <div class="feedback-entry">
+                    <div style="background-color: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                         <p><strong>Name:</strong> ${feedbackData.name}</p>
                         <p><strong>Email:</strong> ${feedbackData.email}</p>
                         <p><strong>Feedback:</strong> ${feedbackData.feedback}</p>
                     </div>
-                    <hr>
+                    <hr style="border: none; height: 1px; background-color: #ccc; margin: 20px 0;">
                 `;
             });
         } else {
             feedbackDataElement.innerHTML = '<p>No feedback data available.</p>';
         }
+        
         function myfunc() {
-      alert("You are being redirected to the Home Page.");
-    }
+            alert("You are being redirected to the Home Page.");
+        }
     </script>
-
 </body>
 </html>
